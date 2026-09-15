@@ -1,0 +1,51 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : cpu
+Version: V-2023.12-SP5
+Date   : Sun May  4 02:10:38 2025
+****************************************
+
+Operating Conditions: tt0p85v25c   Library: saed32rvt_tt0p85v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: fetch0/icache0/icache_fill_fsm/fsm/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: arbiter0/grant_dcache_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  cpu                16000                 saed32rvt_tt0p85v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  fetch0/icache0/icache_fill_fsm/fsm/state_reg/CLK (DFFX1_RVT)
+                                                          0.00       0.00 r
+  fetch0/icache0/icache_fill_fsm/fsm/state_reg/QN (DFFX1_RVT)
+                                                          0.10       0.10 f
+  U2033/Y (AO22X1_RVT)                                    0.07       0.17 f
+  arbiter0/grant_dcache_reg/D (DFFARX1_RVT)               0.01       0.18 f
+  data arrival time                                                  0.18
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  arbiter0/grant_dcache_reg/CLK (DFFARX1_RVT)             0.00       0.15 r
+  library hold time                                      -0.01       0.14
+  data required time                                                 0.14
+  --------------------------------------------------------------------------
+  data required time                                                 0.14
+  data arrival time                                                 -0.18
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.04
+
+
+1

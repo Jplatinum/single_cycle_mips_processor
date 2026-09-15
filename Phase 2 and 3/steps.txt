@@ -1,0 +1,17 @@
+ssh aaqureshi2@best-tux.cae.wisc.edu
+
+rm -rf Syn
+scp -r "C:\Users\ariaq\Desktop\ECE 552\Syn" aaqureshi2@best-tux.cae.wisc.edu:~/
+
+dc_shell -64bit -no_gui -f script.tcl
+
+scp aaqureshi2@best-tux.cae.wisc.edu:~/Syn/*.txt "C:\Users\ariaq\Downloads"
+scp aaqureshi2@best-tux.cae.wisc.edu:~/Syn/cpu.syn.vg "C:\Users\ariaq\Downloads"
+
+scp -r "C:\Users\ariaq\Desktop\ECE 552\aSyn" aaqureshi2@best-tux.cae.wisc.edu:~/
+scp aaqureshi2@best-tux.cae.wisc.edu:~/aSyn/*.txt "C:\Users\ariaq\Downloads"
+scp aaqureshi2@best-tux.cae.wisc.edu:~/aSyn/optimized_cpu.syn.vg "C:\Users\ariaq\Downloads"
+
+scp -r "C:\Users\ariaq\Desktop\ECE 552\bSyn" aaqureshi2@best-tux.cae.wisc.edu:~/
+scp aaqureshi2@best-tux.cae.wisc.edu:~/bSyn/*.txt "C:\Users\ariaq\Downloads"
+scp aaqureshi2@best-tux.cae.wisc.edu:~/bSyn/branch_cpu.syn.vg "C:\Users\ariaq\Downloads"

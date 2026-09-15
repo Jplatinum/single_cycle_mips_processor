@@ -1,0 +1,115 @@
+ 
+****************************************
+Report : area
+Design : cpu
+Version: V-2023.12-SP5
+Date   : Sun May  4 02:10:37 2025
+****************************************
+
+Information: Updating design information... (UID-85)
+Information: Timing loop detected. (OPT-150)
+	U3495/A U3495/Y decode0/U128/A2 decode0/U128/Y U1758/A1 U1758/Y U1757/A1 U1757/Y decode0/U80/A2 decode0/U80/Y U3572/A2 U3572/Y U3815/A1 U3815/Y U3817/A1 U3817/Y U3822/A1 U3822/Y U2498/A3 U2498/Y U3442/A U3442/Y U3441/A U3441/Y U3440/A U3440/Y U3694/A2 U3694/Y 
+Information: Timing loop detected. (OPT-150)
+	memory0/U19/A1 memory0/U19/Y U2643/A1 U2643/Y 
+Warning: Disabling timing arc between pins 'A2' and 'Y' on cell 'decode0/U128'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A2' and 'Y' on cell 'decode0/U128'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A1' and 'Y' on cell 'memory0/U19'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A1' and 'Y' on cell 'memory0/U19'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A2' and 'Y' on cell 'decode0/U125'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A2' and 'Y' on cell 'decode0/U125'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A2' and 'Y' on cell 'decode0/U129'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A2' and 'Y' on cell 'decode0/U129'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A1' and 'Y' on cell 'U1797'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A1' and 'Y' on cell 'U1797'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A1' and 'Y' on cell 'memory0/U12'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A1' and 'Y' on cell 'memory0/U12'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A1' and 'Y' on cell 'memory0/U11'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A1' and 'Y' on cell 'memory0/U11'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A1' and 'Y' on cell 'memory0/U10'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A1' and 'Y' on cell 'memory0/U10'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A1' and 'Y' on cell 'memory0/U9'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A1' and 'Y' on cell 'memory0/U9'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A1' and 'Y' on cell 'memory0/U8'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A1' and 'Y' on cell 'memory0/U8'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A1' and 'Y' on cell 'memory0/U7'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A1' and 'Y' on cell 'memory0/U7'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A1' and 'Y' on cell 'memory0/U6'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A1' and 'Y' on cell 'memory0/U6'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A1' and 'Y' on cell 'memory0/U5'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A1' and 'Y' on cell 'memory0/U5'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A1' and 'Y' on cell 'memory0/U4'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A1' and 'Y' on cell 'memory0/U4'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A1' and 'Y' on cell 'memory0/U18'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A1' and 'Y' on cell 'memory0/U18'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A1' and 'Y' on cell 'memory0/U17'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A1' and 'Y' on cell 'memory0/U17'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A1' and 'Y' on cell 'memory0/U16'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A1' and 'Y' on cell 'memory0/U16'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A1' and 'Y' on cell 'memory0/U15'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A1' and 'Y' on cell 'memory0/U15'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A1' and 'Y' on cell 'memory0/U14'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A1' and 'Y' on cell 'memory0/U14'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A1' and 'Y' on cell 'memory0/U13'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A1' and 'Y' on cell 'memory0/U13'
+         to break a timing loop. (OPT-314)
+Library(s) Used:
+
+    saed32rvt_tt0p85v25c (File: /cae/apps/data/saed32_edk-2022/lib/stdcell_rvt/db_nldm/saed32rvt_tt0p85v25c.db)
+
+Number of ports:                           19
+Number of nets:                          4639
+Number of cells:                         4741
+Number of combinational cells:           3588
+Number of sequential cells:              1145
+Number of macros/black boxes:               0
+Number of buf/inv:                        650
+Number of references:                      86
+
+Combinational area:               8488.409693
+Buf/Inv area:                     1019.625733
+Noncombinational area:            7080.452031
+Macro/Black Box area:                0.000000
+Net Interconnect area:            4544.011546
+
+Total cell area:                 15568.861724
+Total area:                      20112.873270
+1

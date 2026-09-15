@@ -1,0 +1,872 @@
+# Compile of project-phase2-testbench.v was successful.
+# Compile of memory.v was successful.
+# Compile of writeback0.v was successful.
+# Compile of CPU.v was successful.
+# Compile of M_W_pipe.v was successful.
+# Compile of RegisterFile.v was successful.
+# Compile of decode0.v was successful.
+# Compile of ReadDecoder_4_16.v was successful.
+# Compile of WriteDecoder_4_16.v was successful.
+# Compile of E_M_pipe.v was successful.
+# Compile of simpletb.v was successful.
+# Compile of D_E_pipe.v was successful.
+# Compile of execute0.v was successful.
+# Compile of fetch0.v was successful.
+# Compile of memory0.v was successful.
+# Compile of F_D_pipe.v was successful.
+# Compile of hazard_detection.v was successful.
+# Compile of forwarding_unit.v was successful.
+# Compile of D-Flip-Flop.v was successful.
+# Compile of hlt_unit.v was successful.
+# Compile of mem_instructions.v was successful.
+# Compile of addsub_4bit.v was successful.
+# Compile of addsub16bit.v was successful.
+# Compile of BitCell.v was successful.
+# Compile of comp_instructions.v was successful.
+# Compile of cont_instructions.v was successful.
+# Compile of PC_reg.v was successful.
+# Compile of red.v was successful.
+# Compile of Register.v was successful.
+# Compile of RegisterFileWrapper.v was successful.
+# Compile of ror16bit.v was successful.
+# Compile of Shifter.v was successful.
+# Compile of padDSB.v was successful.
+# Compile of icache.v was successful.
+# Compile of MetaDataArray.v was successful.
+# Compile of DataArray.v was successful.
+# Compile of multicycle_memory.v was successful.
+# Compile of cache_fill_FSM.v was successful.
+# Compile of arbiter.v was successful.
+# Compile of dcache.v was successful.
+# Compile of project-phase3-testbench.v was successful.
+# 41 compiles, 0 failed with no errors.
+# Compile of dcache.v was successful.
+vsim -gui work.cpu_tb_phase3
+# vsim -gui work.cpu_tb_phase3 
+# Start time: 17:53:37 on May 03,2025
+# Loading work.cpu_tb_phase3
+# Loading work.cpu
+# Loading work.fetch
+# Loading work.addsub16bit
+# Loading work.addsub_4bit
+# Loading work.Register
+# Loading work.icache
+# Loading work.cache_fill_FSM
+# Loading work.cla_4bit
+# Loading work.cla_16bit
+# Loading work.dff
+# Loading work.DataArray
+# Loading work.MetaDataArray
+# Loading work.arbiter
+# Loading work.memory4c
+# Loading work.dcache
+# Loading work.FD_pipe
+# Loading work.decode
+# Loading work.RegisterFile
+# Loading work.ReadDecoder_4_16
+# Loading work.WriteDecoder_4_16
+# Loading work.hazard_detection_unit
+# Loading work.DE_pipe
+# Loading work.execute
+# Loading work.comp_instructions
+# Loading work.padDSB
+# Loading work.red
+# Loading work.Shifter
+# Loading work.ror16bit
+# Loading work.mem_instr
+# Loading work.contr_instructions
+# Loading work.EM_pipe
+# Loading work.mem
+# Loading work.MW_pipe
+# Loading work.writeback
+# Loading work.forwarding_unit
+# Loading work.BitCell
+# Loading work.Block
+# Loading work.MBlock
+# Loading work.DWord
+# Loading work.MCell
+# Loading work.DCell
+# ** Warning: Design size of 145347 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+run -all
+# Hello world...simulation starting
+# See verilogsim.plog and verilogsim.ptrace for output
+# ** Note: $stop    : C:/Users/ariaq/Desktop/ECE 552/Phase 2/project-phase3-testbench.v(157)
+#    Time: 4805 ps  Iteration: 0  Instance: /cpu_tb_phase3
+# Break in Module cpu_tb_phase3 at C:/Users/ariaq/Desktop/ECE 552/Phase 2/project-phase3-testbench.v line 157
+#  Top-level D-cache instance inside CPU_tb_phase3 
+add wave -hex cpu_tb_phase3/DUT/dcache0/refill_way
+add wave    cpu_tb_phase3/DUT/dcache0/fsm_busy
+add wave    cpu_tb_phase3/DUT/dcache0/write_data_array
+add wave    cpu_tb_phase3/DUT/dcache0/write_tag_array
+add wave -hex cpu_tb_phase3/DUT/dcache0/mem_addr
+add wave    cpu_tb_phase3/DUT/dcache0/mem_request
+add wave    cpu_tb_phase3/DUT/dcache0/dcache_stall
+
+#  Tag RAM outputs 
+add wave -hex cpu_tb_phase3/DUT/dcache0/way0_tag_out
+add wave -hex cpu_tb_phase3/DUT/dcache0/way1_tag_out
+
+#  Data RAM outputs 
+add wave -hex cpu_tb_phase3/DUT/dcache0/way0_data_out
+add wave -hex cpu_tb_phase3/DUT/dcache0/way1_data_out
+
+#  Block enables & word enables 
+add wave -hex cpu_tb_phase3/DUT/dcache0/block_enable_write0
+add wave -hex cpu_tb_phase3/DUT/dcache0/block_enable_write1
+add wave    cpu_tb_phase3/DUT/dcache0/word_enable
+
+#  Hit/miss signals 
+add wave    cpu_tb_phase3/DUT/dcache0/match0
+add wave    cpu_tb_phase3/DUT/dcache0/match1
+add wave    cpu_tb_phase3/DUT/dcache0/dcache_hit
+
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: Design size of 145347 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Hello world...simulation starting
+# See verilogsim.plog and verilogsim.ptrace for output
+# ** Note: $stop    : C:/Users/ariaq/Desktop/ECE 552/Phase 2/project-phase3-testbench.v(157)
+#    Time: 4805 ps  Iteration: 0  Instance: /cpu_tb_phase3
+# Break in Module cpu_tb_phase3 at C:/Users/ariaq/Desktop/ECE 552/Phase 2/project-phase3-testbench.v line 157
+# WARNING: No extended dataflow license exists
+# Compile of F_D_pipe.v was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.FD_pipe
+# ** Warning: Design size of 145347 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Hello world...simulation starting
+# See verilogsim.plog and verilogsim.ptrace for output
+# ** Note: $stop    : C:/Users/ariaq/Desktop/ECE 552/Phase 2/project-phase3-testbench.v(157)
+#    Time: 4805 ps  Iteration: 0  Instance: /cpu_tb_phase3
+# Break in Module cpu_tb_phase3 at C:/Users/ariaq/Desktop/ECE 552/Phase 2/project-phase3-testbench.v line 157
+# Compile of project-phase2-testbench.v was successful.
+# Compile of memory.v was successful.
+# Compile of writeback0.v was successful.
+# Compile of CPU.v was successful.
+# Compile of M_W_pipe.v was successful.
+# Compile of RegisterFile.v was successful.
+# Compile of decode0.v was successful.
+# Compile of ReadDecoder_4_16.v was successful.
+# Compile of WriteDecoder_4_16.v was successful.
+# Compile of E_M_pipe.v was successful.
+# Compile of simpletb.v was successful.
+# Compile of D_E_pipe.v was successful.
+# Compile of execute0.v was successful.
+# Compile of fetch0.v was successful.
+# Compile of memory0.v was successful.
+# Compile of F_D_pipe.v was successful.
+# Compile of hazard_detection.v was successful.
+# Compile of forwarding_unit.v was successful.
+# Compile of D-Flip-Flop.v was successful.
+# Compile of hlt_unit.v was successful.
+# Compile of mem_instructions.v was successful.
+# Compile of addsub_4bit.v was successful.
+# Compile of addsub16bit.v was successful.
+# Compile of BitCell.v was successful.
+# Compile of comp_instructions.v was successful.
+# Compile of cont_instructions.v was successful.
+# Compile of PC_reg.v was successful.
+# Compile of red.v was successful.
+# Compile of Register.v was successful.
+# Compile of RegisterFileWrapper.v was successful.
+# Compile of ror16bit.v was successful.
+# Compile of Shifter.v was successful.
+# Compile of padDSB.v was successful.
+# Compile of icache.v was successful.
+# Compile of MetaDataArray.v was successful.
+# Compile of DataArray.v was successful.
+# Compile of multicycle_memory.v was successful.
+# Compile of cache_fill_FSM.v was successful.
+# Compile of arbiter.v was successful.
+# Compile of dcache.v was successful.
+# Compile of project-phase3-testbench.v was successful.
+# 41 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.cpu_tb_phase3
+# Loading work.cpu
+# Loading work.fetch
+# Loading work.addsub16bit
+# Loading work.addsub_4bit
+# Loading work.Register
+# Loading work.icache
+# Loading work.cache_fill_FSM
+# Loading work.cla_4bit
+# Loading work.cla_16bit
+# Loading work.dff
+# Loading work.DataArray
+# Loading work.MetaDataArray
+# Loading work.arbiter
+# Loading work.memory4c
+# Loading work.dcache
+# Loading work.FD_pipe
+# Loading work.decode
+# Loading work.RegisterFile
+# Loading work.ReadDecoder_4_16
+# Loading work.WriteDecoder_4_16
+# Loading work.hazard_detection_unit
+# Loading work.DE_pipe
+# Loading work.execute
+# Loading work.comp_instructions
+# Loading work.padDSB
+# Loading work.red
+# Loading work.Shifter
+# Loading work.ror16bit
+# Loading work.mem_instr
+# Loading work.contr_instructions
+# Loading work.EM_pipe
+# Loading work.mem
+# Loading work.MW_pipe
+# Loading work.writeback
+# Loading work.forwarding_unit
+# Loading work.BitCell
+# Loading work.Block
+# Loading work.MBlock
+# Loading work.DWord
+# Loading work.MCell
+# Loading work.DCell
+# ** Warning: Design size of 145347 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Hello world...simulation starting
+# See verilogsim.plog and verilogsim.ptrace for output
+# ** Note: $stop    : C:/Users/ariaq/Desktop/ECE 552/Phase 2/project-phase3-testbench.v(157)
+#    Time: 4805 ps  Iteration: 0  Instance: /cpu_tb_phase3
+# Break in Module cpu_tb_phase3 at C:/Users/ariaq/Desktop/ECE 552/Phase 2/project-phase3-testbench.v line 157
+# Compile of project-phase3-testbench.v was successful.
+# Compile of CPU.v was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.cpu_tb_phase3
+# Loading work.cpu
+# ** Warning: Design size of 145347 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Hello world...simulation starting
+# See verilogsim.plog and verilogsim.ptrace for output
+# ** Note: $stop    : C:/Users/ariaq/Desktop/ECE 552/Phase 2/project-phase3-testbench.v(158)
+#    Time: 5305 ps  Iteration: 0  Instance: /cpu_tb_phase3
+# Break in Module cpu_tb_phase3 at C:/Users/ariaq/Desktop/ECE 552/Phase 2/project-phase3-testbench.v line 158
+# Compile of fetch0.v was successful.
+# Compile of project-phase3-testbench.v was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.cpu_tb_phase3
+# Loading work.fetch
+# ** Warning: Design size of 145347 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Hello world...simulation starting
+# See verilogsim.plog and verilogsim.ptrace for output
+# ** Note: $stop    : C:/Users/ariaq/Desktop/ECE 552/Phase 2/project-phase3-testbench.v(157)
+#    Time: 4805 ps  Iteration: 0  Instance: /cpu_tb_phase3
+# Break in Module cpu_tb_phase3 at C:/Users/ariaq/Desktop/ECE 552/Phase 2/project-phase3-testbench.v line 157
+# Compile of F_D_pipe.v was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.FD_pipe
+# ** Warning: Design size of 145347 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Hello world...simulation starting
+# See verilogsim.plog and verilogsim.ptrace for output
+# ** Note: $stop    : C:/Users/ariaq/Desktop/ECE 552/Phase 2/project-phase3-testbench.v(157)
+#    Time: 4805 ps  Iteration: 0  Instance: /cpu_tb_phase3
+# Break in Module cpu_tb_phase3 at C:/Users/ariaq/Desktop/ECE 552/Phase 2/project-phase3-testbench.v line 157
+# Fetch / Decode control
+cpu_tb_phase3.DUT.PC_fetch
+# invalid command name "cpu_tb_phase3.DUT.PC_fetch"
+cpu_tb_phase3.DUT.instruction_fetch
+# invalid command name "cpu_tb_phase3.DUT.instruction_fetch"
+cpu_tb_phase3.DUT.icache_hit_signal
+# invalid command name "cpu_tb_phase3.DUT.icache_hit_signal"
+cpu_tb_phase3.DUT.stall
+# invalid command name "cpu_tb_phase3.DUT.stall"
+cpu_tb_phase3.DUT.flush
+# invalid command name "cpu_tb_phase3.DUT.flush"
+
+# FD’D pipeline
+cpu_tb_phase3.DUT.fd_pipe.instr_out
+# invalid command name "cpu_tb_phase3.DUT.fd_pipe.instr_out"
+cpu_tb_phase3.DUT.fd_pipe.pc_plus_2_out
+# invalid command name "cpu_tb_phase3.DUT.fd_pipe.pc_plus_2_out"
+
+# Decode outputs
+cpu_tb_phase3.DUT.decode0.opcode
+# invalid command name "cpu_tb_phase3.DUT.decode0.opcode"
+cpu_tb_phase3.DUT.decode0.dest
+# invalid command name "cpu_tb_phase3.DUT.decode0.dest"
+cpu_tb_phase3.DUT.decode0.src1
+# invalid command name "cpu_tb_phase3.DUT.decode0.src1"
+cpu_tb_phase3.DUT.decode0.src2
+# invalid command name "cpu_tb_phase3.DUT.decode0.src2"
+cpu_tb_phase3.DUT.decode0.imm_field
+# invalid command name "cpu_tb_phase3.DUT.decode0.imm_field"
+cpu_tb_phase3.DUT.decode0.reg_write
+# invalid command name "cpu_tb_phase3.DUT.decode0.reg_write"
+cpu_tb_phase3.DUT.decode0.mem_enable
+# invalid command name "cpu_tb_phase3.DUT.decode0.mem_enable"
+cpu_tb_phase3.DUT.decode0.mem_write
+# invalid command name "cpu_tb_phase3.DUT.decode0.mem_write"
+
+# Hazard/forwarding
+cpu_tb_phase3.DUT.hdu.stall
+# invalid command name "cpu_tb_phase3.DUT.hdu.stall"
+cpu_tb_phase3.DUT.hdu.flush
+# invalid command name "cpu_tb_phase3.DUT.hdu.flush"
+cpu_tb_phase3.DUT.de_pipe.mem_read_out   # ID_EX_memRead
+# invalid command name "cpu_tb_phase3.DUT.de_pipe.mem_read_out"
+cpu_tb_phase3.DUT.forwarding_unit0.forwardA
+# invalid command name "cpu_tb_phase3.DUT.forwarding_unit0.forwardA"
+cpu_tb_phase3.DUT.forwarding_unit0.forwardB
+# invalid command name "cpu_tb_phase3.DUT.forwarding_unit0.forwardB"
+
+# Execute results
+cpu_tb_phase3.DUT.execute0.aluResult
+# invalid command name "cpu_tb_phase3.DUT.execute0.aluResult"
+cpu_tb_phase3.DUT.execute0.mem_calc_result
+# invalid command name "cpu_tb_phase3.DUT.execute0.mem_calc_result"
+cpu_tb_phase3.DUT.execute0.branch_taken
+# invalid command name "cpu_tb_phase3.DUT.execute0.branch_taken"
+cpu_tb_phase3.DUT.execute0.branch_target
+# invalid command name "cpu_tb_phase3.DUT.execute0.branch_target"
+
+# EM’WB pipeline
+cpu_tb_phase3.DUT.em_pipe.dest_out
+# invalid command name "cpu_tb_phase3.DUT.em_pipe.dest_out"
+cpu_tb_phase3.DUT.em_pipe.reg_write_enable_out
+# invalid command name "cpu_tb_phase3.DUT.em_pipe.reg_write_enable_out"
+cpu_tb_phase3.DUT.em_pipe.mem_calc_result_out  # for LLB/LHB
+# invalid command name "cpu_tb_phase3.DUT.em_pipe.mem_calc_result_out"
+cpu_tb_phase3.DUT.em_pipe.aluResult_out
+# invalid command name "cpu_tb_phase3.DUT.em_pipe.aluResult_out"
+
+# Write-back
+cpu_tb_phase3.DUT.mw_pipe.reg_write_data_out
+# invalid command name "cpu_tb_phase3.DUT.mw_pipe.reg_write_data_out"
+cpu_tb_phase3.DUT.mw_pipe.reg_write_addr_out
+# invalid command name "cpu_tb_phase3.DUT.mw_pipe.reg_write_addr_out"
+cpu_tb_phase3.DUT.mw_pipe.reg_write_enable_out
+# invalid command name "cpu_tb_phase3.DUT.mw_pipe.reg_write_enable_out"
+
+# Fetch & PC
+add wave -hex /cpu_tb_phase3/DUT/PC_fetch
+add wave -hex /cpu_tb_phase3/DUT/instruction_fetch
+add wave -hex /cpu_tb_phase3/DUT/icache_hit_signal
+
+# Stall/flush from hazard unit
+add wave /cpu_tb_phase3/DUT/hdu/stall
+add wave /cpu_tb_phase3/DUT/hdu/flush
+
+# FD’D pipeline
+add wave /cpu_tb_phase3/DUT/fd_pipe/instr_out
+add wave /cpu_tb_phase3/DUT/fd_pipe/pc_plus_2_out
+
+# Decode outputs
+add wave /cpu_tb_phase3/DUT/decode0/opcode
+add wave /cpu_tb_phase3/DUT/decode0/dest
+add wave /cpu_tb_phase3/DUT/decode0/src1
+add wave /cpu_tb_phase3/DUT/decode0/src2
+add wave -hex /cpu_tb_phase3/DUT/decode0/imm_field
+add wave /cpu_tb_phase3/DUT/decode0/reg_write
+add wave /cpu_tb_phase3/DUT/decode0/mem_enable
+add wave /cpu_tb_phase3/DUT/decode0/mem_write
+
+# ID/EX pipeline memread
+add wave /cpu_tb_phase3/DUT/de_pipe/mem_read_out
+
+# Forwarding decisions
+add wave /cpu_tb_phase3/DUT/forwarding_unit0/forwardA
+add wave /cpu_tb_phase3/DUT/forwarding_unit0/forwardB
+
+# Execute results
+add wave -hex /cpu_tb_phase3/DUT/execute0/aluResult
+add wave -hex /cpu_tb_phase3/DUT/execute0/mem_calc_result
+add wave /cpu_tb_phase3/DUT/execute0/branch_taken
+add wave -hex /cpu_tb_phase3/DUT/execute0/branch_target
+
+# EX/MEM pipeline
+add wave /cpu_tb_phase3/DUT/em_pipe/dest_out
+add wave /cpu_tb_phase3/DUT/em_pipe/reg_write_enable_out
+add wave -hex /cpu_tb_phase3/DUT/em_pipe/aluResult_out
+add wave -hex /cpu_tb_phase3/DUT/em_pipe/mem_calc_result_out
+
+# MEM/WB pipeline & writeback
+add wave -hex /cpu_tb_phase3/DUT/mw_pipe/reg_write_data_out
+add wave /cpu_tb_phase3/DUT/mw_pipe/reg_write_addr_out
+add wave /cpu_tb_phase3/DUT/mw_pipe/reg_write_enable_out
+
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: Design size of 145347 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Hello world...simulation starting
+# See verilogsim.plog and verilogsim.ptrace for output
+# ** Note: $stop    : C:/Users/ariaq/Desktop/ECE 552/Phase 2/project-phase3-testbench.v(157)
+#    Time: 4805 ps  Iteration: 0  Instance: /cpu_tb_phase3
+# Break in Module cpu_tb_phase3 at C:/Users/ariaq/Desktop/ECE 552/Phase 2/project-phase3-testbench.v line 157
+# Compile of CPU.v was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.cpu
+# ** Warning: Design size of 145347 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Hello world...simulation starting
+# See verilogsim.plog and verilogsim.ptrace for output
+# ** Note: $stop    : C:/Users/ariaq/Desktop/ECE 552/Phase 2/project-phase3-testbench.v(157)
+#    Time: 4805 ps  Iteration: 0  Instance: /cpu_tb_phase3
+# Break in Module cpu_tb_phase3 at C:/Users/ariaq/Desktop/ECE 552/Phase 2/project-phase3-testbench.v line 157
+add wave -hex /cpu_tb_phase3/DUT/icache_mem_req
+add wave -hex /cpu_tb_phase3/DUT/grant_icache
+add wave -hex /cpu_tb_phase3/DUT/icache_hit_signal
+add wave -hex /cpu_tb_phase3/DUT/dcache_mem_req
+add wave -hex /cpu_tb_phase3/DUT/grant_dcache
+add wave -hex /cpu_tb_phase3/DUT/dcache_stall
+# ** UI-Msg: (vish-4014) No objects found matching '/cpu_tb_phase3/DUT/dcache_stall'.
+add wave -hex /cpu_tb_phase3/DUT/fsm_busy
+# ** UI-Msg: (vish-4014) No objects found matching '/cpu_tb_phase3/DUT/fsm_busy'.
+add wave -hex /cpu_tb_phase3/DUT/fd_pipe/instr_out 
+add wave -hex /cpu_tb_phase3/DUT/PC_fetch
+add wave -hex /cpu_tb_phase3/DUT/ic_stall
+add wave -hex /cpu_tb_phase3/DUT/stall
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: Design size of 145347 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Hello world...simulation starting
+# See verilogsim.plog and verilogsim.ptrace for output
+# ** Note: $stop    : C:/Users/ariaq/Desktop/ECE 552/Phase 2/project-phase3-testbench.v(157)
+#    Time: 4805 ps  Iteration: 0  Instance: /cpu_tb_phase3
+# Break in Module cpu_tb_phase3 at C:/Users/ariaq/Desktop/ECE 552/Phase 2/project-phase3-testbench.v line 157
+# Compile of fetch0.v was successful.
+# Compile of CPU.v was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.cpu
+# Loading work.fetch
+# ** Warning: Design size of 145347 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Hello world...simulation starting
+# See verilogsim.plog and verilogsim.ptrace for output
+# Break key hit
+# Simulation stop requested.
+# Compile of fetch0.v was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.fetch
+# ** Warning: Design size of 145347 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Hello world...simulation starting
+# See verilogsim.plog and verilogsim.ptrace for output
+# ** Note: $stop    : C:/Users/ariaq/Desktop/ECE 552/Phase 2/project-phase3-testbench.v(157)
+#    Time: 4805 ps  Iteration: 0  Instance: /cpu_tb_phase3
+# Break in Module cpu_tb_phase3 at C:/Users/ariaq/Desktop/ECE 552/Phase 2/project-phase3-testbench.v line 157
+add wave /cpu_tb_phase3/DUT/pc_enable
+add wave /cpu_tb_phase3/DUT/halt_fetch_block
+add wave /cpu_tb_phase3/DUT/cache_stall
+# ** UI-Msg: (vish-4014) No objects found matching '/cpu_tb_phase3/DUT/cache_stall'.
+add wave /cpu_tb_phase3/DUT/ic_stall
+add wave /cpu_tb_phase3/DUT/stall
+add wave /cpu_tb_phase3/DUT/flush
+add wave /cpu_tb_phase3/DUT/IF_ID_enable
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: Design size of 145347 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Hello world...simulation starting
+# See verilogsim.plog and verilogsim.ptrace for output
+# ** Note: $stop    : C:/Users/ariaq/Desktop/ECE 552/Phase 2/project-phase3-testbench.v(157)
+#    Time: 4805 ps  Iteration: 0  Instance: /cpu_tb_phase3
+# Break in Module cpu_tb_phase3 at C:/Users/ariaq/Desktop/ECE 552/Phase 2/project-phase3-testbench.v line 157
+add wave -position insertpoint  \
+sim:/cpu_tb_phase3/DUT/fetch0/icache0/fsm_busy
+add wave -position insertpoint  \
+sim:/cpu_tb_phase3/DUT/fetch0/icache0/chunk_offset
+add wave -position insertpoint  \
+sim:/cpu_tb_phase3/DUT/fetch0/icache0/offset
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: Design size of 145347 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Hello world...simulation starting
+# See verilogsim.plog and verilogsim.ptrace for output
+# ** Note: $stop    : C:/Users/ariaq/Desktop/ECE 552/Phase 2/project-phase3-testbench.v(157)
+#    Time: 4805 ps  Iteration: 0  Instance: /cpu_tb_phase3
+# Break in Module cpu_tb_phase3 at C:/Users/ariaq/Desktop/ECE 552/Phase 2/project-phase3-testbench.v line 157
+# Compile of project-phase2-testbench.v was successful.
+# Compile of memory.v was successful.
+# Compile of writeback0.v was successful.
+# Compile of CPU.v was successful.
+# Compile of M_W_pipe.v was successful.
+# Compile of RegisterFile.v was successful.
+# Compile of decode0.v was successful.
+# Compile of ReadDecoder_4_16.v was successful.
+# Compile of WriteDecoder_4_16.v was successful.
+# Compile of E_M_pipe.v was successful.
+# Compile of simpletb.v was successful.
+# Compile of D_E_pipe.v was successful.
+# Compile of execute0.v was successful.
+# Compile of fetch0.v was successful.
+# Compile of memory0.v was successful.
+# Compile of F_D_pipe.v was successful.
+# Compile of hazard_detection.v was successful.
+# Compile of forwarding_unit.v was successful.
+# Compile of D-Flip-Flop.v was successful.
+# Compile of hlt_unit.v was successful.
+# Compile of mem_instructions.v was successful.
+# Compile of addsub_4bit.v was successful.
+# Compile of addsub16bit.v was successful.
+# Compile of BitCell.v was successful.
+# Compile of comp_instructions.v was successful.
+# Compile of cont_instructions.v was successful.
+# Compile of PC_reg.v was successful.
+# Compile of red.v was successful.
+# Compile of Register.v was successful.
+# Compile of RegisterFileWrapper.v was successful.
+# Compile of ror16bit.v was successful.
+# Compile of Shifter.v was successful.
+# Compile of padDSB.v was successful.
+# Compile of icache.v was successful.
+# Compile of MetaDataArray.v was successful.
+# Compile of DataArray.v was successful.
+# Compile of multicycle_memory.v was successful.
+# Compile of cache_fill_FSM.v was successful.
+# Compile of arbiter.v was successful.
+# Compile of dcache.v was successful.
+# Compile of project-phase3-testbench.v was successful.
+# 41 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.cpu_tb_phase3
+# Loading work.cpu
+# Loading work.fetch
+# Loading work.addsub16bit
+# Loading work.addsub_4bit
+# Loading work.Register
+# Loading work.icache
+# Loading work.cache_fill_FSM
+# Loading work.cla_4bit
+# Loading work.cla_16bit
+# Loading work.dff
+# Loading work.DataArray
+# Loading work.MetaDataArray
+# Loading work.arbiter
+# Loading work.memory4c
+# Loading work.dcache
+# Loading work.FD_pipe
+# Loading work.decode
+# Loading work.RegisterFile
+# Loading work.ReadDecoder_4_16
+# Loading work.WriteDecoder_4_16
+# Loading work.hazard_detection_unit
+# Loading work.DE_pipe
+# Loading work.execute
+# Loading work.comp_instructions
+# Loading work.padDSB
+# Loading work.red
+# Loading work.Shifter
+# Loading work.ror16bit
+# Loading work.mem_instr
+# Loading work.contr_instructions
+# Loading work.EM_pipe
+# Loading work.mem
+# Loading work.MW_pipe
+# Loading work.writeback
+# Loading work.forwarding_unit
+# Loading work.BitCell
+# Loading work.Block
+# Loading work.MBlock
+# Loading work.DWord
+# Loading work.MCell
+# Loading work.DCell
+# ** Warning: Design size of 145347 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Hello world...simulation starting
+# See verilogsim.plog and verilogsim.ptrace for output
+# ** Note: $stop    : C:/Users/ariaq/Desktop/ECE 552/Phase 2/project-phase3-testbench.v(157)
+#    Time: 4805 ps  Iteration: 0  Instance: /cpu_tb_phase3
+# Break in Module cpu_tb_phase3 at C:/Users/ariaq/Desktop/ECE 552/Phase 2/project-phase3-testbench.v line 157
+# Compile of fetch0.v was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.fetch
+# ** Warning: Design size of 145347 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Hello world...simulation starting
+# See verilogsim.plog and verilogsim.ptrace for output
+# ** Note: $stop    : C:/Users/ariaq/Desktop/ECE 552/Phase 2/project-phase3-testbench.v(157)
+#    Time: 4805 ps  Iteration: 0  Instance: /cpu_tb_phase3
+# Break in Module cpu_tb_phase3 at C:/Users/ariaq/Desktop/ECE 552/Phase 2/project-phase3-testbench.v line 157
+# Compile of fetch0.v was successful.
+# Compile of CPU.v was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.cpu
+# Loading work.fetch
+# ** Warning: Design size of 145347 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Hello world...simulation starting
+# See verilogsim.plog and verilogsim.ptrace for output
+# ** Note: $stop    : C:/Users/ariaq/Desktop/ECE 552/Phase 2/project-phase3-testbench.v(157)
+#    Time: 4805 ps  Iteration: 0  Instance: /cpu_tb_phase3
+# Break in Module cpu_tb_phase3 at C:/Users/ariaq/Desktop/ECE 552/Phase 2/project-phase3-testbench.v line 157
+# Compile of fetch0.v was successful.
+# Compile of CPU.v was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.cpu
+# Loading work.fetch
+# ** Warning: Design size of 145347 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Hello world...simulation starting
+# See verilogsim.plog and verilogsim.ptrace for output
+# Break key hit
+# Simulation stop requested.
+# Compile of fetch0.v was successful.
+# Compile of CPU.v was successful.
+quit -sim
+# End time: 23:19:23 on May 03,2025, Elapsed time: 5:25:46
+# Errors: 0, Warnings: 4
+vsim -gui work.cpu_tb_phase3
+# vsim -gui work.cpu_tb_phase3 
+# Start time: 03:34:40 on May 04,2025
+# Loading work.cpu_tb_phase3
+# Loading work.cpu
+# Loading work.fetch
+# Loading work.addsub16bit
+# Loading work.addsub_4bit
+# Loading work.Register
+# Loading work.icache
+# Loading work.cache_fill_FSM
+# Loading work.cla_4bit
+# Loading work.cla_16bit
+# Loading work.dff
+# Loading work.DataArray
+# Loading work.MetaDataArray
+# Loading work.arbiter
+# Loading work.memory4c
+# Loading work.dcache
+# Loading work.FD_pipe
+# Loading work.decode
+# Loading work.RegisterFile
+# Loading work.ReadDecoder_4_16
+# Loading work.WriteDecoder_4_16
+# Loading work.hazard_detection_unit
+# Loading work.DE_pipe
+# Loading work.execute
+# Loading work.comp_instructions
+# Loading work.padDSB
+# Loading work.red
+# Loading work.Shifter
+# Loading work.ror16bit
+# Loading work.mem_instr
+# Loading work.contr_instructions
+# Loading work.EM_pipe
+# Loading work.mem
+# Loading work.MW_pipe
+# Loading work.writeback
+# Loading work.forwarding_unit
+# Loading work.BitCell
+# Loading work.Block
+# Loading work.MBlock
+# Loading work.DWord
+# Loading work.MCell
+# Loading work.DCell
+# ** Warning: Design size of 145347 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+run -all
+# Hello world...simulation starting
+# See verilogsim.plog and verilogsim.ptrace for output
+# ** Note: $stop    : C:/Users/ariaq/Desktop/ECE 552/Phase 2/project-phase3-testbench.v(157)
+#    Time: 4805 ps  Iteration: 0  Instance: /cpu_tb_phase3
+# Break in Module cpu_tb_phase3 at C:/Users/ariaq/Desktop/ECE 552/Phase 2/project-phase3-testbench.v line 157
+quit -sim
+# End time: 03:36:00 on May 04,2025, Elapsed time: 0:01:20
+# Errors: 0, Warnings: 2
+vsim -gui work.cpu_tb_phase3
+# vsim -gui work.cpu_tb_phase3 
+# Start time: 07:10:30 on May 04,2025
+# Loading work.cpu_tb_phase3
+# Loading work.cpu
+# Loading work.fetch
+# Loading work.addsub16bit
+# Loading work.addsub_4bit
+# Loading work.Register
+# Loading work.icache
+# Loading work.cache_fill_FSM
+# Loading work.cla_4bit
+# Loading work.cla_16bit
+# Loading work.dff
+# Loading work.DataArray
+# Loading work.MetaDataArray
+# Loading work.arbiter
+# Loading work.memory4c
+# Loading work.dcache
+# Loading work.FD_pipe
+# Loading work.decode
+# Loading work.RegisterFile
+# Loading work.ReadDecoder_4_16
+# Loading work.WriteDecoder_4_16
+# Loading work.hazard_detection_unit
+# Loading work.DE_pipe
+# Loading work.execute
+# Loading work.comp_instructions
+# Loading work.padDSB
+# Loading work.red
+# Loading work.Shifter
+# Loading work.ror16bit
+# Loading work.mem_instr
+# Loading work.contr_instructions
+# Loading work.EM_pipe
+# Loading work.mem
+# Loading work.MW_pipe
+# Loading work.writeback
+# Loading work.forwarding_unit
+# Loading work.BitCell
+# Loading work.Block
+# Loading work.MBlock
+# Loading work.DWord
+# Loading work.MCell
+# Loading work.DCell
+# ** Warning: Design size of 145347 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+add wave -position insertpoint  \
+sim:/cpu_tb_phase3/DUT/fetch0/icache0/addr \
+sim:/cpu_tb_phase3/DUT/fetch0/icache0/block_enable_0 \
+sim:/cpu_tb_phase3/DUT/fetch0/icache0/block_enable_0_final \
+sim:/cpu_tb_phase3/DUT/fetch0/icache0/block_enable_1 \
+sim:/cpu_tb_phase3/DUT/fetch0/icache0/block_enable_1_final \
+sim:/cpu_tb_phase3/DUT/fetch0/icache0/block_enable_write0 \
+sim:/cpu_tb_phase3/DUT/fetch0/icache0/block_enable_write1 \
+sim:/cpu_tb_phase3/DUT/fetch0/icache0/cache_hit \
+sim:/cpu_tb_phase3/DUT/fetch0/icache0/cache_miss \
+sim:/cpu_tb_phase3/DUT/fetch0/icache0/cache_stall \
+sim:/cpu_tb_phase3/DUT/fetch0/icache0/chunk_offset \
+sim:/cpu_tb_phase3/DUT/fetch0/icache0/clk \
+sim:/cpu_tb_phase3/DUT/fetch0/icache0/data_out \
+sim:/cpu_tb_phase3/DUT/fetch0/icache0/fsm_busy \
+sim:/cpu_tb_phase3/DUT/fetch0/icache0/grant \
+sim:/cpu_tb_phase3/DUT/fetch0/icache0/index \
+sim:/cpu_tb_phase3/DUT/fetch0/icache0/lru0 \
+sim:/cpu_tb_phase3/DUT/fetch0/icache0/match0 \
+sim:/cpu_tb_phase3/DUT/fetch0/icache0/match1 \
+sim:/cpu_tb_phase3/DUT/fetch0/icache0/mem_addr \
+sim:/cpu_tb_phase3/DUT/fetch0/icache0/mem_data \
+sim:/cpu_tb_phase3/DUT/fetch0/icache0/mem_request \
+sim:/cpu_tb_phase3/DUT/fetch0/icache0/mem_valid \
+sim:/cpu_tb_phase3/DUT/fetch0/icache0/meta_in_way0 \
+sim:/cpu_tb_phase3/DUT/fetch0/icache0/meta_in_way1 \
+sim:/cpu_tb_phase3/DUT/fetch0/icache0/offset \
+sim:/cpu_tb_phase3/DUT/fetch0/icache0/refill_way \
+sim:/cpu_tb_phase3/DUT/fetch0/icache0/rst \
+sim:/cpu_tb_phase3/DUT/fetch0/icache0/set_enable \
+sim:/cpu_tb_phase3/DUT/fetch0/icache0/tag \
+sim:/cpu_tb_phase3/DUT/fetch0/icache0/tag0 \
+sim:/cpu_tb_phase3/DUT/fetch0/icache0/tag1 \
+sim:/cpu_tb_phase3/DUT/fetch0/icache0/use_way0 \
+sim:/cpu_tb_phase3/DUT/fetch0/icache0/valid0 \
+sim:/cpu_tb_phase3/DUT/fetch0/icache0/valid1 \
+sim:/cpu_tb_phase3/DUT/fetch0/icache0/way0_data_out \
+sim:/cpu_tb_phase3/DUT/fetch0/icache0/way0_tag_out \
+sim:/cpu_tb_phase3/DUT/fetch0/icache0/way1_data_out \
+sim:/cpu_tb_phase3/DUT/fetch0/icache0/way1_tag_out \
+sim:/cpu_tb_phase3/DUT/fetch0/icache0/word_enable \
+sim:/cpu_tb_phase3/DUT/fetch0/icache0/write_data_array \
+sim:/cpu_tb_phase3/DUT/fetch0/icache0/write_tag_array
+run -all
+# Hello world...simulation starting
+# See verilogsim.plog and verilogsim.ptrace for output
+# WARNING: No extended dataflow license exists
+# ** Note: $stop    : C:/Users/ariaq/Desktop/ECE 552/Phase 2/project-phase3-testbench.v(157)
+#    Time: 4805 ps  Iteration: 0  Instance: /cpu_tb_phase3
+# Break in Module cpu_tb_phase3 at C:/Users/ariaq/Desktop/ECE 552/Phase 2/project-phase3-testbench.v line 157
+quit -sim
+# End time: 07:20:47 on May 04,2025, Elapsed time: 0:10:17
+# Errors: 0, Warnings: 2

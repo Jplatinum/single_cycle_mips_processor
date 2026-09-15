@@ -1,0 +1,72 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : cpu
+Version: V-2023.12-SP5
+Date   : Sun May  4 02:10:38 2025
+****************************************
+
+Operating Conditions: tt0p85v25c   Library: saed32rvt_tt0p85v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: de_pipe/opcode_ff[2]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: em_pipe/aluResult_ff[6]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  cpu                16000                 saed32rvt_tt0p85v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  de_pipe/opcode_ff[2]/state_reg/CLK (DFFX1_RVT)          0.00       0.00 r
+  de_pipe/opcode_ff[2]/state_reg/Q (DFFX1_RVT)            0.14       0.14 f
+  U2852/Y (NOR3X2_RVT)                                    0.11       0.24 r
+  U2853/Y (MUX21X2_RVT)                                   0.12       0.36 f
+  U2896/Y (XOR2X2_RVT)                                    0.12       0.48 r
+  U2884/Y (NAND2X0_RVT)                                   0.04       0.53 f
+  U2513/Y (NOR3X2_RVT)                                    0.10       0.63 r
+  U2879/Y (OR3X1_RVT)                                     0.08       0.71 r
+  U2881/Y (AND2X1_RVT)                                    0.08       0.79 r
+  U3681/Y (AO222X1_RVT)                                   0.14       0.93 r
+  U2918/Y (INVX1_RVT)                                     0.06       0.99 f
+  U2734/Y (XOR2X1_RVT)                                    0.16       1.15 r
+  U2763/Y (XNOR2X1_RVT)                                   0.14       1.29 r
+  U2206/Y (OR2X1_RVT)                                     0.06       1.35 r
+  U2857/Y (AO22X1_RVT)                                    0.09       1.44 r
+  U3371/Y (XNOR2X2_RVT)                                   0.13       1.57 r
+  U2819/Y (XOR3X2_RVT)                                    0.09       1.66 f
+  U2804/Y (AOI22X1_RVT)                                   0.09       1.75 r
+  U2711/Y (AO22X1_RVT)                                    0.07       1.82 r
+  U2507/Y (XOR3X2_RVT)                                    0.08       1.90 f
+  U2494/Y (XOR3X2_RVT)                                    0.10       2.00 r
+  U2797/Y (OR2X2_RVT)                                     0.07       2.07 r
+  U3489/Y (AND2X1_RVT)                                    0.07       2.14 r
+  U3049/Y (NAND3X0_RVT)                                   0.05       2.19 f
+  U3050/Y (OR2X1_RVT)                                     0.07       2.26 f
+  em_pipe/aluResult_ff[6]/U4/Y (AND2X1_RVT)               0.06       2.31 f
+  em_pipe/aluResult_ff[6]/state_reg/D (DFFX1_RVT)         0.01       2.32 f
+  data arrival time                                                  2.32
+
+  clock clk (rise edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.15       2.35
+  em_pipe/aluResult_ff[6]/state_reg/CLK (DFFX1_RVT)       0.00       2.35 r
+  library setup time                                     -0.05       2.30
+  data required time                                                 2.30
+  --------------------------------------------------------------------------
+  data required time                                                 2.30
+  data arrival time                                                 -2.32
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.03
+
+
+1
